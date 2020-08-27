@@ -131,7 +131,7 @@ header .title {
 .slink {
     position: absolute;
     z-index: 100;
-    bottom: 20px;
+    bottom: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
