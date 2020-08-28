@@ -3,7 +3,7 @@
 <head></head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=!, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="images.css">
     <link rel="shortcut icon" href="./Images/Icon 2.png" type="image/x-icon">
     <title>DrAplexTMD Gamer</title>
 </head>
@@ -21,23 +21,30 @@
             <a href="index.html" class="logol"><h2 class="title">DrAplexTMD Gamer</h2></a>
             <div class="toggle" onclick="toggleMenu();"></div>
         </header>
-        <img src="./Images/carl-raw-m3hn2Kn5Bns-unsplash.jpg">
+        <img src="./Images/mateo-vrbnjak-nCU4yq5xDEQ-unsplash.jpg">
         <div class="overlay"></div>
         <div class="text">
-            <h2 class="quto">The Pro Gamer you love</h2>
-            <a href="index.html">Learn More</a>
+            <h2 class="quto">Images</h2>
         </div>
         <div class="slink">
             <a href="https://twitter.com/GamingTMD"><img src="./Images/twitter.png"></a>
         </div>
     </section>
+    <section class="below">
+        <img src="./Images/Untitled.jpg" class="black">
+        <img src="./Images/sadeq-shahsvan-cR0bLCSpGfw-unsplash.jpg" class="one">
+        <img src="./Images/fazly-shah-Ei5d39YRrgY-unsplash.jpg" class="two">
+        <img src="./Images/jeff-hardi-yRAK7Vcyl_Q-unsplash.jpg" class="three">
+    </section>
     <script type="text/javascript">
         function toggleMenu() {
             var menuToggle = document.querySelector('.toggle');
             var banner = document.querySelector('.banner');
+            var below = document.querySelector('.below');
             var menu = document.querySelector('.menu');
             menuToggle.classList.toggle('active')
             banner.classList.toggle('active')
+            below.classList.toggle('active')
             menu.classList.toggle('active')
         }
     </script>
