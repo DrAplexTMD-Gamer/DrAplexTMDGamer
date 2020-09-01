@@ -227,6 +227,13 @@ header .title {
     opacity: 100;
 }
 
+@media (max-width: 1050px) {
+    .text h2 {
+        position: absolute;
+        left: 300px;
+    }
+}
+
 @media (max-width: 991px) {
     section, section header {
         padding: 40px;
