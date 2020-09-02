@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head></head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=!, initial-scale=1.0">
+    <link rel="stylesheet" href="404.css">
+    <link rel="shortcut icon" href="./Images/Icon 2.png" type="image/x-icon">
+    <title>DrAplexTMD Gamer</title>
+</head>
+<body>
+    <div class="menu">
+        <ul>
+            <li><a href="index" onclick="toggleMenu();">Home</a></li>
+            <li><a href="SecondPage" onclick="toggleMenu();">Youtube</a></li>
+            <li><a href="index" onclick="toggleMenu();">Contact</a></li>
+        </ul>
+    </div>
+    <section class="banner">
+        <header>
+            <a href="index.html" class="logol"><h2 class="title">DrAplexTMD Gamer</h2></a>
+            <div class="toggle" onclick="toggleMenu();"></div>
+        </header>
+        <img src="./Images/markus-spiske-iar-afB0QQw-unsplash.jpg">
+        <div class="overlay"></div>
+        <div class="text">
+            <h2 class="four">404: page not found</h2>
+            <h3 class="oops">oops</h3>
+            <p>the page your looking for does not exist or you have mis-spelled the url.</p>
+            <a href="index">Go Home</a>
+        </div>
+        <div class="slink">
+            <a href="https://twitter.com/GamingTMD"><img src="./Images/twitter.png"></a>
+        </div>
+    </section>
+    <script type="text/javascript">
+        function toggleMenu() {
+            var menuToggle = document.querySelector('.toggle');
+            var banner = document.querySelector('.banner');
+            var menu = document.querySelector('.menu');
+            menuToggle.classList.toggle('active')
+            banner.classList.toggle('active')
+            menu.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
