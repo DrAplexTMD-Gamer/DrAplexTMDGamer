@@ -22,6 +22,11 @@ body{
     color: white;
 }
 
+::selection {
+    color: black;
+    background-color: red;
+}
+
 section {
     position: absolute;
     right: 0;
