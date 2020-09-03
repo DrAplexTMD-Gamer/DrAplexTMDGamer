@@ -7,6 +7,38 @@
     box-sizing: border-box;
 }
 
+.cookie-container {
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    right: 0;
+    background: #2f3640;
+    color: #f5f6fa;
+    padding: 0 32px;
+    box-shadow: 0 -2px 16px rgba(47, 54, 64, 0.39);
+  
+    transition: 400ms;
+  }
+  
+.cookie-container.active {
+    bottom: 0;
+}
+  
+.cookie-container a {
+    color: #f5f6fa;
+}
+  
+.cookie-btn {
+    background: #e84118;
+    border: 0;
+    color: #f5f6fa;
+    padding: 12px 48px;
+    font-size: 18px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
 ::-webkit-scrollbar {
     display: none;
 }
@@ -40,7 +72,7 @@ section {
 }
 
 .banner.active {
-    right: 300px;
+    right: 230px;
 }
 
 section img {
@@ -141,7 +173,7 @@ header .title {
 .slink {
     position: absolute;
     z-index: 100;
-    bottom: 70px;
+    bottom: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -156,7 +188,7 @@ header .title {
     position: fixed;
     top: 0;
     right: 0;
-    width: 300px;
+    width: 230px;
     height: 100%;
     display: flex;
     justify-content: center;
