@@ -15,7 +15,7 @@
     background: rgb(0, 21, 49);
     color: #fff;
     padding: 0 32px;
-    box-shadow: 0 -2px 16px rgba(47, 54, 64, 0.39);
+    box-shadow: 0 -2px 16px rgb(0, 15, 34);
   
     transition: 400ms;
   }
