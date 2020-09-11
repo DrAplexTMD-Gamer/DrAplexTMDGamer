@@ -239,7 +239,7 @@ header .title {
 
 .Ab {
     position: absolute;
-    top: 10%;
+    top: 5%;
     font-size: 45px;
     font-weight: 900;
     width: 80%;
@@ -249,7 +249,7 @@ header .title {
 .desc {
     width: 80%;
     position: absolute;
-    top: 20%;
+    top: 15%;
     font-size: 20px;
     left: 10%;
 }
