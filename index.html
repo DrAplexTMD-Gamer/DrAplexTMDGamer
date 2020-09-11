@@ -9,6 +9,11 @@
     <title>DrAplexTMD Gamer</title>
 </head>
 <body>
+    <div class="header">
+        <div class="progress-container">
+          <div class="progress-bar" id="myBar"></div>
+        </div>
+      </div>
     <div class="menu">
         <ul>
             <li><a href="index" onclick="toggleMenu();">Home</a></li>
@@ -25,10 +30,11 @@
         <div class="overlay"></div>
         <div class="text">
             <h2 class="quto">The Pro Gamer you love</h2>
-            <a href="index">Learn More</a>
+            <a href="#About" class="learn">Learn More</a>
         </div>
         <div class="slink">
-            <a href="https://twitter.com/GamingTMD"><img src="./Images/twitter.png"></a>
+            <a class="twitter" target="blank" href="https://twitter.com/GamingTMD"><img src="./Images/twitter.png"></a>
+            <a class="yt" href="https://www.youtube.com/channel/UCsfeApM7mMircCyP0-NTcTg?sub_confirmation=1" target="_blank"><img src="Images/Images/yt_icon_mono_dark.png"></a>
         </div>
         <div class="cookie-container">
             <p>
@@ -39,16 +45,57 @@
             <button class="cookie-btn">Okay</button>
         </div>
     </section>
+    <section class="black">
+        <div id="About">
+            <h2 class="Ab">About Me</h2>
+            <p class="desc">
+                I am DrAplexTMD Gamer (Not Real Name). I am a YouTuber, I make videos on my Youtube Channel <a class="plink" href="https://www.youtube.com/channel/UCsfeApM7mMircCyP0-NTcTg?sub_confirmation=1">DrAplexTMD Gamer</a>, I make videos of: Gaming, Entertainment, Tutorials and more in the near future. I make videos on the YouTube platform. My favorite hobby is to Draw, Play Games, Experiment, Game Development and more. I am a YouTuber, Gamer, Game Developer, Graphics Designer and Artist. I have a Twitter account @GamingTMD. My most favorite game is Minecraft but I also love GTA sa. But I do love "The Last Of Us II", though I have not played it. I will also play Fortnite eventually.I make games using Unity and 3d modeling using blender. I am not a proffesional at game development, I watch tutorials on YouTube. My current favorite two YouTubers are "DanTDM", "PewDiePie". I also help people with ROBLOX game development. I will help others with Unity too (maybe..) when I have a better pc. I will also upload gaming video once I get my new gaming pc. The software I use are listed down <a href="#SWUSE" class="belowhref">below</a>.
+            </p>
+            <h1 class="SW">Softwares I Use</h1>
+            <p class="swdesc" id="SWUSE">
+                This are the list of the software I to make video, games and in general:
+                <br>
+                <br>
+                To Record Videos: OBS Studio (Free)
+                <br>
+                To Edit: Adobe Premiere Pro CC 2020, Adobe After Affects CC 2020 (Paid)
+                <br>
+                To Draw or Edit Photos: Adobe Photoshop CC 2020 (Paid)
+                <br>
+                Graphics Designing: Adobe Illustrator CC 2020 (Paid)
+                <br>
+                website Development: Visual Studio Code (Free)
+                <br>
+                3D Modeling: Blender(Free)
+                <br>
+                Game Development: Unity Engine Latest Version (Free & Paid)
+                <br>
+                Roblox Game Development: Roblox Studio (Free)
+            </p>
+        </div>
+    </section>
     <script type="text/javascript">
         function toggleMenu() {
             var menuToggle = document.querySelector('.toggle');
             var banner = document.querySelector('.banner');
             var menu = document.querySelector('.menu');
+            var black = document.querySelector('.black');
             menuToggle.classList.toggle('active')
             banner.classList.toggle('active')
             menu.classList.toggle('active')
+            black.classList.toggle('active')
         }
     </script>
     <script src="main.js"></script>
+    <script type="text/javascript">
+        window.onscroll = function() {myFunction()};
+
+        function myFunction() {
+        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 100;
+        document.getElementById("myBar").style.width = scrolled + "%";
+        }
+    </script>
 </body>
 </html>

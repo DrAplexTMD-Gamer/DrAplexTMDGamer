@@ -196,16 +196,26 @@ header .title {
 
 .slink {
     position: absolute;
-    z-index: 100;
-    bottom: 70px;
+    z-index: 101;
+    bottom: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.slink a {
+.twitter {
+    margin-right: 10px;
+    position: absolute;
     width: 30px;
     height: 25px;
+    z-index: 101;
+}
+.yt {
+    margin-right: -100px;
+    position: absolute;
+    width: 35px;
+    height: 25px;
+    z-index: 101;
 }
 
 .menu {
